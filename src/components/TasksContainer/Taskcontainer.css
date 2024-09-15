@@ -119,6 +119,7 @@
     height: 100px;
     resize: vertical;
     line-height: 1.5;
+    width: 95%;
 }
 
 .task-input::placeholder {
