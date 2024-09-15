@@ -1,7 +1,7 @@
 .card-container {
     background-color: #FCFDFD;
     width: 30vw;
-    min-height: 80vh;
+    min-height: 60vh;
     border-radius: 4px;
     padding: 20px;
     -webkit-box-shadow: 0px 2px 16px -5px rgba(201,247,255,1);
@@ -11,7 +11,7 @@
 
 .card-subcontainer {
     border-radius: 10px;
-    padding:5px 10px;
+    padding:15px 12px;
     margin: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 100%;
@@ -20,5 +20,186 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    position: relative;
+    margin-bottom: 16px;
 }
+
+.task-header{
+     padding: 0; margin: 0; font-size: 22px; font-weight: bold
+}
+
+.content-container{
+     display: flex; justify-content: space-between; align-items:center
+}
+
+.add-task{
+    display: flex; justify-content: center; align-items: center; flex-direction: column; height: 60vh
+}
+
+.save-btn{
+    border: 1px solid #51AEF8; padding: 5px 20px; background-color: #fff; color: #51AEF8; border-radius: 4px; width: 100px
+}
+
+.completed-status{
+    color: green; font-weight: bold; margin:16px 0 5px 0; padding: 0 
+}
+
+.title-styles{
+    font-size: 18px;
+    font-weight:600;
+}
+
+.desc-styles{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-input {
+    width: 200px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-input:focus {
+    border-color: #4ecf64;
+    box-shadow: 0 0 5px rgba(78, 207, 100, 0.5);
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.icon-animation {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.icon-animation:hover {
+    transform: scale(1.2);
+}
+
+
+.icon-animation:active {
+    transform: scale(0.9);
+    color: #ff4545; 
+}
+
+.task-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.task-input:focus {
+    border-color: #4ecf64;
+    box-shadow: 0 0 5px rgba(78, 207, 100, 0.5);
+}
+
+.title-input {
+    font-weight: bold;
+}
+
+.description-input {
+    height: 100px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.task-input::placeholder {
+    color: #999;
+}
+
+.error-message {
+    color: #ff4545;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: bold; 
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        width: 70%;
+    }
+
+    .search-input {
+        width: 100px;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        color: #333;
+        background-color: #f9f9f9;
+        outline: none;
+        transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .search-input:focus {
+        border-color: #4ecf64;
+        box-shadow: 0 0 5px rgba(78, 207, 100, 0.5);
+    }
+    
+    .search-input::placeholder {
+        color: #999;
+    }
+
+    .task-input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #333;
+        background-color: #f9f9f9;
+        outline: none;
+        transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .task-input:focus {
+        border-color: #4ecf64;
+        box-shadow: 0 0 5px rgba(78, 207, 100, 0.5);
+    }
+    
+    .title-input {
+        font-weight: bold;
+    }
+    
+    .description-input {
+        height: 100px;
+        resize: vertical;
+        line-height: 1.5;
+        width: 227px;
+    }
+    
+    .task-input::placeholder {
+        color: #999;
+    }
+  }
+
+  @media screen and  (max-width:1020px)  {
+    .card-container {
+        width: 70%;
+    }
+   }
+
