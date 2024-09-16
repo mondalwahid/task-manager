@@ -81,6 +81,8 @@ const TasksContainer = () => {
             await updateTask(id, taskToUpdate);
             setEditingTaskId(null);
             setError('');
+            setNewTaskTitle('')
+            setNewTaskDescription('')
         } catch (error) {
             alert('Something went wrong.');
         }
